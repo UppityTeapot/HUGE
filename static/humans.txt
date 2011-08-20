@@ -1,0 +1,17 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Developer: Peter Hicks
+  Site: 
+  Twitter: 
+  Location: 
+
+/* THANKS */
+  Names (& URL): 
+
+/* SITE */
+  Standards: HTML5, CSS3, Python, JavaScript
+  Components: Modernizr, jQuery
+  Software: Django
