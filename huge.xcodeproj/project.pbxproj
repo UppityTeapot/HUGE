@@ -12,12 +12,18 @@
 		D028EB0613FFDFEC00662391 /* manage.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = manage.py; sourceTree = "<group>"; };
 		D028EB0713FFDFEF00662391 /* settings.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = settings.py; sourceTree = "<group>"; };
 		D028EB0813FFE14400662391 /* storyteller */ = {isa = PBXFileReference; lastKnownFileType = folder; path = storyteller; sourceTree = "<group>"; };
+		D074AF691400344D006A51C4 /* static */ = {isa = PBXFileReference; lastKnownFileType = folder; path = static; sourceTree = "<group>"; };
+		D074AF6A1400344D006A51C4 /* templates */ = {isa = PBXFileReference; lastKnownFileType = folder; path = templates; sourceTree = "<group>"; };
+		D074AF6D140037D7006A51C4 /* detail.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = detail.html; path = templates/place/detail.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		D028EAF513FFDEE500662391 = {
 			isa = PBXGroup;
 			children = (
+				D074AF6D140037D7006A51C4 /* detail.html */,
+				D074AF691400344D006A51C4 /* static */,
+				D074AF6A1400344D006A51C4 /* templates */,
 				D028EB0813FFE14400662391 /* storyteller */,
 				D028EAFE13FFDF0800662391 /* __init__.py */,
 				D028EB0613FFDFEC00662391 /* manage.py */,
