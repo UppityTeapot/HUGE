@@ -6,13 +6,9 @@ var messages = $("p").length;
 var messageNumber = 20;
 var messagesOnScreen = 10;
 
-	var refreshId = setInterval(function() {
-      $("#responsecontainer").load('response.php?randval='+ Math.random());
-   	}, 9000);
-
  	function huge_showText(text)
 	{
-		$('#console').append('<p>' + text + '</p>')
+		$('<p></p>').append(text).appendTo('#console');
 		$('p:last').hide().fadeIn(800);
     	$('#console').scrollTo('p:last', 200);
     	event.preventDefault();
@@ -38,13 +34,26 @@ var messagesOnScreen = 10;
 		$('#console').scrollTo($("p:eq(" + number + ")"), 200);
 	}
 
+    /* Backend interface */
+
+    function huge_loadPlace(id)
+    {
+    $.ajax({
+          url: "/storyteller/place/" + id + "/",
+          success: function(data){
+           place = $('.place').html();
+            huge_showText(place);
+            }
+          });
+    }
+
 window.onload = function(){ 
 	
 	/* Initialise screen, display welcome test */
-	huge_showText('Welcome to HUGE! Enjoy your stay.','0')
+    huge_showText('Welcome to HUGE! Enjoy your stay.','0')
 	
     $("a.text").click(function () { 
-      huge_showText('Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.' )
+      huge_loadPlace(3)
     });
     
     /* debug buttons */

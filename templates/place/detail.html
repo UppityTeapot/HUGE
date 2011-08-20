@@ -1,8 +1,8 @@
-<span id="place_{{ place.id }}">{{ place.description }}</span>
+<span class="place" id="place_{{ place.id }}">{{ place.description }}</span>
 
-<dl>
+<dl class="object">
 {% for thing in thing %}
-<dt id="object_{{ thing.id }}">{{ thing.name }}</dt>
-<dd>{{ thing.description }}</dd>
+<dt class="objectname" id="object_{{ thing.id }}">{{ thing.name }}</dt>
+<dd class="objectdesc">{{ thing.description }}</dd>
 {% endfor %}
 </dl>
