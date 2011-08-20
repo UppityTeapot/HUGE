@@ -1,3 +1,4 @@
 *.pyc
 *.xc*
+*.xcodeproj
 .DS_Store
