@@ -60,7 +60,7 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    "/home/peter/Projects/huge/static",
+    "/Users/peter/Projects/huge/static",
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -97,7 +97,7 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'huge.urls'
 
 TEMPLATE_DIRS = (
-    "/home/peter/Projects/huge/templates",
+    "/Users/peter/Projects/huge/templates",
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
