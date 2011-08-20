@@ -13,5 +13,7 @@ urlpatterns = patterns('',
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
+    (r'^place/$', 'storyteller.views.index'),
+    (r'^place/(?P<place_id>\d+)/$', 'storyteller.views.place'),
     url(r'^admin/', include(admin.site.urls)),
 )
