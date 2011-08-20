@@ -1,4 +1,5 @@
 *.pyc
 *.xc*
-*.xcodeproj
 .DS_Store
+
+huge.xcodeproj/project.pbxproj
