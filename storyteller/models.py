@@ -2,16 +2,24 @@ from django.db import models
 
 # Create your models here.
 
-class Object(models.Model):
-    name = models.CharField("Name of the object", max_length=30)
-    description = models.TextField("The description that will be given when the object is interacted with"max_length=30)
-    grabbable = models.BooleanField("Whether this object can be picked up")
+class Place(models.Model):
+    name = models.CharField(max_length=30)
+    description = models.TextField(max_length=30)
+    # broken exit_north = models.OneToOneField('self', to_field='exit_south')
+    # broken exit_south = models.OneToOneField('self', to_field='exit_south')
+    # broken exit_east = models.OneToOneField('self', to_field='exit_west')
+    # broken exit_west = models.OneToOneField('self', to_field='exit_east')
     
+    def __unicode__(self):
+        return self.name
+        return self.description
 
-class Room(models.Model):
-    name = models.CharField("Name of the room", max_length=30)
-    description = models.TextField("The description that will be given when the object is interacted with"max_length=30)
-    # exit_north
-    # exit_south
-    # exit_east
-    # exit_west
+class Thing(models.Model):
+    name = models.CharField(max_length=30)
+    description = models.TextField(max_length=30)
+    location = models.ForeignKey(Place)
+    grabbable = models.BooleanField("Can we pick this up?")
+    
+    def __unicode__(self):
+        return self.name
+        return self.description
