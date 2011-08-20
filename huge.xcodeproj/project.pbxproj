@@ -6,10 +6,21 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		D028EAFE13FFDF0800662391 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		D028EAFF13FFDF0800662391 /* manage.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = manage.py; sourceTree = "<group>"; };
+		D028EB0013FFDF0800662391 /* settings.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = settings.py; sourceTree = "<group>"; };
+		D028EB0113FFDF0800662391 /* urls.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = urls.py; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		D028EAF513FFDEE500662391 = {
 			isa = PBXGroup;
 			children = (
+				D028EAFE13FFDF0800662391 /* __init__.py */,
+				D028EAFF13FFDF0800662391 /* manage.py */,
+				D028EB0013FFDF0800662391 /* settings.py */,
+				D028EB0113FFDF0800662391 /* urls.py */,
 			);
 			sourceTree = "<group>";
 		};
