@@ -1,0 +1,81 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+                
+        <title></title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+                        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            
+        <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css">
+                                
+        <script src="{{ STATIC_URL }}js/libs/modernizr-2.0.min.js"></script>
+        <script src="{{ STATIC_URL }}js/libs/respond.min.js"></script>
+    </head>
+    <body>
+   
+        <div id="container">
+            <header>
+            </header>
+            <div id="main" role="main">
+                <div id="fade"></div>
+                <section id="console">
+                    <div id="initial">
+                    </div>
+                </section>
+                <section id="controls">
+                    <div class="blade">
+                        <div class="bladeinner">
+                            <a class="look">Look at</a><br>
+                            <a class="move">Move</a><br>
+                            <a class="talk">Talk</a><br>
+                            <a class="talk">Inventory</a><br>
+                            <a class="debug">Debug</a>
+                        </div>
+                    </div>
+                    <div class="blade2 lookblade">
+                        <div class="bladeinner">
+                            <a class="room1_table">Table</a>
+                        </div>
+                    </div>
+                    <div class="blade2 moveblade">
+                        <div class="bladeinner">
+                            Move
+                        </div>
+                    </div>
+                    <div class="blade2 talkblade">
+                        <div class="bladeinner">
+                            Talk
+                        </div>
+                    </div>
+                    <div class="blade2 debugblade">
+                        <div class="bladeinner">
+                            <a class="text">Display Message</a><br>
+                            <a class="deleteold">Purge Old Messages</a><br>
+                            <a class="howmany">How Many Messages?</a><br>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <footer>
+            </footer>
+        </div> <!--! end of #container -->
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+        <script src="{{ STATIC_URL }}js/libs/jquery-ui-1.8.14.custom.min.js"></script>
+        <script src="{{ STATIC_URL }}js/libs/jquery.scrollTo-1.4.2-min.js"></script>
+        
+        <!-- scripts concatenated and minified via ant build script-->
+        <script src="{{ STATIC_URL }}js/plugins.js"></script>
+        <script src="{{ STATIC_URL }}js/script.js"></script>
+        <!-- end scripts-->
+        
+    </body>
+</html>
